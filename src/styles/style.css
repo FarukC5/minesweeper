@@ -1,0 +1,162 @@
+
+.mine-counter {
+    color: white;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .cell-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .cell-style {
+    width: 40px; /*40*/
+    height: 40px;
+    border-radius: 3px;
+    /*border: 0.5px solid white;  
+  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  /* play again button*/
+  .play-again {
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 7px;
+    background: #595260;
+    color: white;
+    padding: 10px;
+    font-weight: 400;
+  }
+  
+  /* Board */
+  
+  .board-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #ffcb00;
+    padding: 5px 10px 10px 10px;
+    margin: "10px";
+    font-size: 20px;
+  }
+  
+  .board-container h2 {
+    color: white;
+    margin-bottom: 0px;
+  }
+  
+  .board-container p {
+    font-weight: 600;
+  }
+  
+  /*Modal*/
+  
+  .modal-container {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .modal {
+    background: #282c34;
+    width: 45%;
+    border-radius: 5px;
+    box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .modal h2 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .play {
+    background-color: black;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 7px;
+    color: white;
+    padding: 10px;
+    font-weight: 400;
+  }
+  
+  /*  za mobitele*/
+  @media only screen and (max-width: 700px) {
+    .cell-style {
+      width: 33px;
+      height: 33px;
+      align-items: center;
+      cursor: pointer;
+    }
+  
+    .modal {
+      background: #282c34;
+      width: 45%;
+      font-size: smaller;
+    }
+  
+    .modal .play-again {
+      background-color: black;
+    }
+  }
+  
+  @media only screen and (min-width: 390px) {
+    .cell-style {
+      width: 45px;
+      height: 45px;
+      font-size: 20px;
+      font-weight: 500;
+    }
+  
+    .modal {
+      background: #282c34;
+      width: 35%;
+      font-size: medium;
+    }
+  }
+  
+  @media only screen and (min-height: 1024px) {
+    .cell-style {
+      width: 75px;
+      height: 75px;
+      font-size: 38px;
+      font-weight: 500;
+    }
+  
+    .board-container h2 {
+      font-size: xx-large;
+    }
+  
+    .board-container p {
+      font-weight: 600;
+      font-size: xx-large;
+    }
+  
+    .modal {
+      width: 45%;
+      font-size: x-large;
+    }
+  
+    .play-again {
+      font-size: xx-large;
+    }
+  }
